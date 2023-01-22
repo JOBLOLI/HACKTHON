@@ -1,1 +1,19 @@
-<h1>login page</h1>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Login</h2>
+
+<form action="/dashboard/myaccount/" method="post">
+    {% csrf_token %}
+  <label for="fname">email:</label><br>
+  <input type="text" id="email" name="email" value="{{ email }}"><br>
+  <label for="lname">password:</label><br>
+  <input type="text" id="pw" name="pw" value="{{ pw }}"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent</p>
+
+</body>
+</html>
