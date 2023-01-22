@@ -6,9 +6,9 @@
 
 <form action="/dashboard/myaccount/" method="post">
     {% csrf_token %}
-  <label for="fname">email:</label><br>
+  <label for="email">email:</label><br>
   <input type="text" id="email" name="email" value="{{ email }}"><br>
-  <label for="lname">password:</label><br>
+  <label for="pw">password:</label><br>
   <input type="text" id="pw" name="pw" value="{{ pw }}"><br><br>
   <input type="submit" value="Submit">
 </form> 
